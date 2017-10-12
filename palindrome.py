@@ -4,7 +4,7 @@ def palindrome(number):
         return True
     else:
         num = int(number) + int(number[::-1]) # reverse and add original number
-        print num," not palindrome"
+        #print num," not palindrome"
         if num > 1000000: # if doesnt converge
             #print "Number > a million \nExiting"
             return False
