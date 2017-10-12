@@ -1,14 +1,15 @@
 def palindrome(number):
     if isPalindrome(number): #checking for palindrome on number
-        print number, " is a palindrome"
+        #print number, " is a palindrome"
+        return True
     else:
         num = int(number) + int(number[::-1]) # reverse and add original number
         print num," not palindrome"
         if num > 1000000: # if doesnt converge
-            print "Number > a million \nExiting"
+            #print "Number > a million \nExiting"
             return False
         else:
-            print "next ==>"
+            #print "next ==>"
             return palindrome(str(num)) # return palindrome
 
 
@@ -23,7 +24,7 @@ def isPalindrome(number):
 if __name__== "__main__":
 
     while True:
-        number = raw_input("PLease Enter NUMBER\n")
+        number = raw_input("PLease Enter a NUMBER\n")
 
         if number.isdigit():# check whether string has numbers only
 
